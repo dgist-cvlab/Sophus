@@ -401,7 +401,7 @@ public:
       real_factor = cos(half_theta);
     }
 
-    return SO3Group<Scalar>(Quaternion<Scalar>(real_factor,
+    return SO3Group<Scalar>(Eigen::Quaternion<Scalar>(real_factor,
                                                imag_factor*omega.x(),
                                                imag_factor*omega.y(),
                                                imag_factor*omega.z()));
